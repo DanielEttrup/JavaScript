@@ -1,0 +1,3 @@
+Programmer:
+- Færdig programmere 4 på stripe.
+- Programmer en bold i midten af et canvas der kan interactes med mousen, som bruger vel, og acc. 
