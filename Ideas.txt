@@ -3,3 +3,4 @@ Lav en simulering af Joorgens Kommentar til Attribute swap
 Programmer:
 - Færdig programmere 4 på stripe.
 - Programmer en bold i midten af et canvas der kan interactes med mousen, som bruger vel, og acc. 
+- lav function der kan omregne polar corrodinat system til corotisian corrodinat system, og omvendt
