@@ -1,1 +1,5 @@
-Lav en simulering af JÃ¸rgens Kommentar til Attribute swap
+Lav en simulering af Joorgens Kommentar til Attribute swap
+=======
+Programmer:
+- Færdig programmere 4 på stripe.
+- Programmer en bold i midten af et canvas der kan interactes med mousen, som bruger vel, og acc. 
