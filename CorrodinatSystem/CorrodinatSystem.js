@@ -1,5 +1,10 @@
-class CorrodinatSystem {
-	drawgrid(a){
+function CorrodinatSystem(Areal_1,Areal_2) {
+	this.a1 = Areal_1;
+	this.a2 = Areal_2;
+
+
+	this.drawgrid = function(a){
+		if(a !== 0){
 		var cols = height / a;
 		var rows = width / a;
 		for(var y = 0; y < cols; y++){
@@ -7,9 +12,10 @@ class CorrodinatSystem {
 				rect(y*a,x*a,a,a);
 			}	
 		}
+		}
 		return;
 	}
-	drawAxies(){
+	this.drawAxies = function(){
 		strokeWeight(3);
 		stroke(225,225,225);
 		// y axis
@@ -18,25 +24,21 @@ class CorrodinatSystem {
 		line(-width,width/2,width,width/2);	
 	}
 
-	drawCorrodinatSystem(a1,a2){
-	noFill();
-	strokeWeight(1);
-	stroke(75,75,75);
-	this.drawgrid(a1);
-	strokeWeight(2);
-	stroke(125,125,125);
-	this.drawgrid(a2);
-	this.drawAxies();
+	this.Render = function(){
+		if(height !== 0 && width !== 0){
+			noFill();
+			strokeWeight(1);
+			stroke(75,75,75);
+			this.drawgrid(this.a1);
+			strokeWeight(2);
+			stroke(125,125,125);
+			this.drawgrid(this.a2);
+			this.drawAxies();
+		} else {
+			console.log("Height, and or width is 0");
+		}
+
 	}
 }
-
-function sinWeave(theta, magnitude){
-	return (sin(PI-theta)*magnitude);
-}
-function cosWeave(theta, magnitude){
-	return (cos(PI-theta)*magnitude);
-}
-
-
 
 

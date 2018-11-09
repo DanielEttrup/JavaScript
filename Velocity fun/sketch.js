@@ -24,7 +24,7 @@ function draw() {
 	background(51);
 
 	gravity = createVector(0,0.2);
-	wind = createVector(0.2,0);
+
 
 
 	stroke(0)
@@ -33,6 +33,11 @@ function draw() {
 		b[i].applyForce(gravity);
 
 		if(mouseIsPressed){
+				if(mouseX > width/2){
+					wind = createVector(0.2,0);
+				} else {
+					wind = createVector(-0.2,0);
+				}
 			b[i].applyForce(wind);
 		}
 

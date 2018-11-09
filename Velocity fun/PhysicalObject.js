@@ -1,6 +1,6 @@
 // F_friction = -1 * mew * |n| * vel(unit)
 // F_gravity = m1 * m2 / dist 
-// 
+// v1.0
 class PhysicalObject {
 	
 	constructor(mass, x, y){
@@ -29,7 +29,7 @@ class PhysicalObject {
 		var friction = new createVector(this.velocity.x, this.velocity.y);
 		friction.normalize();
 		friction.mult(-1);
-		friction.limit(coEfficientOfFriction);
+		friction.mult(coEfficientOfFriction);
 		// if added can change dir 
 		this.acceleration.add(friction);
 	}
