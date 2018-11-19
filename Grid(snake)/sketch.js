@@ -1,3 +1,5 @@
+// Start over.
+
 var _size = 25;
 var grid = [];
 var diraction = 0;
